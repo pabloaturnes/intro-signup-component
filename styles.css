@@ -1,0 +1,173 @@
+html{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+.card{
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+}
+
+.text-section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 21.33rem;
+}
+
+h1{
+    font-size: 3rem;
+    line-height: 3.2rem;
+    text-align: left;
+}
+
+.text-section p{
+    text-align: left;
+    margin-top: 2rem;
+    color: whitesmoke;
+}
+
+
+.form-section{
+    min-width: 21.33rem;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+
+.premium{
+    background-color: hsl(248, 32%, 49%);
+    text-decoration: none;
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.premium:hover{
+    background-color: hsl(248, 32%, 63%);
+}
+
+.form-section span{
+    color: hsl(246, 25%, 77%) ;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.input-container{
+    position: relative;
+}
+
+
+input{
+    width: 100%;
+    height: 3rem;
+    text-align: left;
+    padding-left: 1.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid gray;
+    outline: none;
+    color: gray;
+}
+
+.warning-icon{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem ;
+    display: none;
+}
+
+.warning{
+    color: hsl(0, 100%, 74%);
+    width: 10.5rem;
+    margin-left: auto;
+    margin-top: 0.3rem;
+    display: none;
+}
+
+.active{
+    display: flex;
+}
+
+button{
+    width: 100%;
+    padding: 0.9rem 0;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    background-color: hsl(154, 59%, 51%);
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: hsl(154, 59%, 65%);
+}
+
+form p{
+    font-size: 0.7rem;
+    color: hsl(246, 25%, 77%) ;
+}
+
+form a{
+ color: hsl(0, 100%, 74%);
+}
+
+@media (max-width:855px){
+
+    .card{
+        justify-content: center;
+        margin: 4rem 0 4rem 0;
+    }
+
+    .text-section, .text-section p, h1{
+        text-align: center;
+
+    }
+
+    .form-section{
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+
+    .premium{
+        padding: 1rem 2rem;
+    }
+
+}
